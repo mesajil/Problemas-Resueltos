@@ -3,6 +3,13 @@
 
 <head>
     <title>Document</title>
+    <style> /* Código en Css para las etiquetas table, th, td */
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 
 <body>
@@ -51,7 +58,6 @@
         <label for="lname">Last name:</label>
         <input type="text" id="lname" name="lname" placeholder="Apellido" value="Perez"><br><br>
         <button type="reset">
-            <img src="https://ps.w.org/wp-reset/assets/icon-256x256.png?rev=1906468" width="20">
             Reset
         </button>
         <button type="submit">Enviar</button>
@@ -87,21 +93,36 @@
 
     <h2>The table element</h2>
     <table>
-        <tr>
-            <th>Month</th>
-            <th>Savings</th>
-            <th>C3</th>
-        </tr>
-        <tr>
-            <td>January</td>
-            <td>$100</td>
-            <td>DATA1</td>
-        </tr>
-        <tr>
-            <td>February</td>
-            <td>$80</td>
-            <td>DATA2</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Marca</th>
+                <th>Precio</th>
+                <th>Imagen</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Laptop</td>
+                <td>HP</td>
+                <td>$900</td>
+                <td><img src="https://mercury.vteximg.com.br/arquivos/ids/6945961-3000-3000/image-ab60c5d048904ff3a496ee496ef0dea8.jpg?v=637860826106270000"
+                        width="80"></td>
+            </tr>
+            <tr>
+                <td>Mouse</td>
+                <td>Logitech</td>
+                <td>$80</td>
+                <td><img src="https://http2.mlstatic.com/D_NQ_NP_2X_630450-MPE46010042231_052021-F.webp" width="80">
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td></td>
+            <td>Total: $980</td>
+            <td></td>
+        </tfoot>
     </table>
 </body>
 
