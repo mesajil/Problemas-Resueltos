@@ -1,10 +1,21 @@
 .titulo,
-.texto, /* Atributo class */
-#tituloh2, /* Atributo id */
-a { /* Etiqueta */
+.texto, /* .class */
+#tituloh2, /* #id */
+a { /* tag */
     color: red;
 }
 
-p.especial {
+p.especial { /* tag.class */
     color: aqua;
 }
+
+
+article h2{ /* tag tag */
+    color: red;
+}
+#article2 h2, /* #id tag */
+#article2 p {
+    color: peru;
+}
+
+
