@@ -1,21 +1,32 @@
+
 .titulo,
 .texto, /* .class */
 #tituloh2, /* #id */
 a { /* tag */
-    color: red;
+    color: #ff0000; /* Rojo en hexadecimal */
 }
 
+
 p.especial { /* tag.class */
-    color: aqua;
+    color: #0ff; /* Aqua en hexadecimal*/
 }
 
 
 article h2{ /* tag tag */
-    color: red;
+    color: #f00; /* Rojo en hexadecimal */
+    border: 2px #f00 dashed; /* Grosor, color, style */
 }
+
+
 #article2 h2, /* #id tag */
 #article2 p {
-    color: peru;
+    color: #cd853f; /* Peru en hexadecimal */
+}
+
+
+* { /* Selector que aplica a todas las etiquetas no seleccionadas */
+    font-size: 16px;
+    color: rgb(0,0,0); /* Negro en rgb */
 }
 
 
