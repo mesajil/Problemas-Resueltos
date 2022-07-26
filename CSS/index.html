@@ -2,34 +2,37 @@
 <html lang="en">
 <head>
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <style> /* CSS con atributo "style" */
-        .p2 {
-            color: peru;
+    <link rel="stylesheet" href="style.css"> <!-- Importando CSS -->
+    <style>
+        header p { /* tag tag */
+            color: #f00; /* Aqua en hexadecimal */
         }
-
-    </style>
+    </style> <!-- CSS en el mismo archivo HTML -->
 </head>
 <body>
-    <p style="color: tomato;">Hola mundo</p> <!-- CSS con atributo "style"-->
-    <p class="p2">Hello World!</p>
-    <a target="_blank" href="https://github.com/mesajil">Visit my github!</a><br>
-    <h2 class="titulo">Heading</h2>
-    <hr>
-    <h2 id="tituloh2">Titulo H2</h2>
-    <p class="texto especial">Parrafo 1</p>
-    <p class="especial">Parrafo 2</p>
-    <hr>
+    <header>
+        <h1 style="color: #f00">Blog de Luis</h1> <!-- CSS en la misma etiqueta -->
+        <p>Parrafo</p>
+        <hr>
+    </header>
     <section>
-        <article id="article1">
-            <h2>Titulo de mi artículo 1</h2>
-            <p>Párrafo</p>
+        <article>
+            <h2>Artículo 1</h2>
+            <p class="parrafo">Párrafo 1</p>
         </article>
         <article id="article2">
-            <h2>Titulo de mi artículo 2</h2>
-            <p>Párrafo</p>
+            <h2>Artículo 2</h2>
+            <p class="parrafo">Párrafo 2</p>
+        </article>
+        <article>
+            <h2>Artículo 3</h2>
+            <p class="parrafo">Párrafo 3</p>
         </article>
     </section>
-    
+    <footer>
+        <hr>
+        <a target="_blank" href="https://github.com/mesajil">Visit mi Github!</a><br>
+        <p>Copyright 2022</p>
+    </footer>
 </body>
 </html>

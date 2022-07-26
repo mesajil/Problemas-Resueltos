@@ -1,32 +1,34 @@
 
-.titulo,
-.texto, /* .class */
-#tituloh2, /* #id */
-a { /* tag */
-    color: #ff0000; /* Rojo en hexadecimal */
-}
-
-
-p.especial { /* tag.class */
+/* Todo clase parrafo de la etiqueta article es color aqua */
+article p.parrafo { /* tag tag.class */
     color: #0ff; /* Aqua en hexadecimal*/
 }
 
 
-article h2{ /* tag tag */
-    color: #f00; /* Rojo en hexadecimal */
-    border: 2px #f00 dashed; /* Grosor, color, style */
+article h2 { /* tag tag */
+    color: #ff0000; /* Todos los titulos h2 en article serán rojos */
 }
 
 
-#article2 h2, /* #id tag */
-#article2 p {
+/* Exceptuando el articulo dos que tendra su titulo h2 en color peru */
+#article2 h2 { /* #id tag */
     color: #cd853f; /* Peru en hexadecimal */
 }
 
 
-* { /* Selector que aplica a todas las etiquetas no seleccionadas */
+* { /* Selector que aplica a todas las etiquetas no modificadas por otras */
     font-size: 16px;
-    color: rgb(0,0,0); /* Negro en rgb */
 }
 
 
+article {
+    border: 2px #f00 dashed; /* Y tendrán un border (Grosor, color, style) */
+}
+
+
+article p{
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+}
