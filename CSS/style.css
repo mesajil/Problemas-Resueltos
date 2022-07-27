@@ -12,7 +12,7 @@ article h2 { /* tag tag */
 
 /* Exceptuando el articulo dos que tendra su titulo h2 en color peru */
 #article2 h2 { /* #id tag */
-    color: #cd853f; /* Peru en hexadecimal */
+    color: black;
 }
 
 
@@ -23,6 +23,7 @@ article h2 { /* tag tag */
 
 article {
     border: 2px #f00 dashed; /* Y tendrán un border (Grosor, color, style) */
+    border-radius: 10px;
 }
 
 
@@ -30,5 +31,15 @@ article p{
     border-width: 5px;
     border-color: black;
     border-style: solid;
-    border-radius: 5px;
+    border-radius: 2em; /* Medida relativa al tamaño de la fuente contenida */
+    /* border-radius: 2em; */ /* Medida relativa al tamaño de la fuente raiz (<html>) */
 }
+
+section {
+    background-color: rgba(0,255,255,0.3); /* La opacidad en rgba(,,,opacidad) va de 0 a 1 */
+}
+
+footer {
+    opacity: 0.5;
+}
+
