@@ -44,7 +44,7 @@ print (l.count(7)) # Contar número de elementos para un valor dado
 print (l[::-1]) # Retorna lista invertida
 l.reverse() # Invertir lista
 print (l)
-del l[-2], l[-1]
+del l[-2:]
 print (l)
 l.sort() # Ordenar lista de menor a mayor (elementos del mismo tipo)
 print (l)
