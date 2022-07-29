@@ -50,3 +50,17 @@ l.sort() # Ordenar lista de menor a mayor (elementos del mismo tipo)
 print (l)
 l.sort(reverse=True) # Ordenar lista de mayor a menor (elementos del mismo tipo)
 print (l)
+
+
+t = () # La tupla es una lista ordenada e inmatuble de datos
+print (t) # tupla vacía
+t = 1, # tupla de un elemento
+print (t)
+t = 5, "Hola", 77 # tupla de varios elementos. También se pueden usar parentesis.
+print (t)
+t = tuple([1,2,3,4]) # list -> tuple
+print (t)
+l = list((1,)) # tuple -> list
+print (l)
+
+
