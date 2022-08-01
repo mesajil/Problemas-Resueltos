@@ -66,7 +66,7 @@ print (l)
 
 # Sets: Un conjunto es una colección no ordenada objetos únicos. Los objetos son no mutables.
 s = {1, "Hello", False, (1,)} 
-print (s)
+print (f"{s} es un set")
 s = set() # Conjunto vacío
 print (s)
 s = set([1,2,2,3]) # list -> set
@@ -81,13 +81,21 @@ s = {1,2,3,4,5}
 print (s.pop()) # Descartar elemento aleatorio. Error si el set está vacío
 print (s)
 print ({1, 2} | {2, 3}) # Unión de conjuntos
-print ({1, 2} & {2, 3}) # Interesección de conjuntos
+print ({1, 2} & {2, 3}) # Intersección de conjuntos
 print ({1, 2} - {2, 3}) # Diferencia de conjuntos
 print ({"Hello", 2} == {2, "Hello"}) # Igualdad de conjuntos
-print ({3,4}.symmetric_difference({4,5})) # Diferencia simétrica
-print ({1,2,3}.issuperset({3,4})) # Validar si un conjunto es superconjunto de otro
-print ({3}.issubset({2,3})) # Validar si un conjunto es subconjunto de otro
+print ({3,4}.symmetric_difference({4,5})) # Diferencia simétrica. También: ^
+print ({3}.issubset({2,3})) # Validar si un conjunto es subconjunto de otro. También: <=
+print ({1,2,3}.issuperset({3,4})) # Validar si un conjunto es superconjunto de otro. También: >=
 print ({1,2}.isdisjoint({2,3})) # Dos conjuntos son disjuntos si la interseción es el conjunto vacío
 print (frozenset({1,2,3})) # Conjunto inmutable
 
+
+# Diccionarios
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
 
