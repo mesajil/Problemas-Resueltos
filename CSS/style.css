@@ -43,3 +43,18 @@ footer {
     opacity: 0.5;
 }
 
+header {
+    background-color: pink;
+    margin: 10px 20px 30px 40px; /* Top left botton right; Top-botton left-right; Top left-right botton*/
+    border: solid 5px red;
+    padding: 40px 30px 20px 10px;
+    width: 200px;
+    height: 50px;
+    overflow: scroll;
+    outline: solid 10px black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 1px 2px 1px gray;
+}
+
