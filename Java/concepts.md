@@ -18,6 +18,15 @@ Principalmente el JDK.
     ```
     java --version
     ```
+
+## Guardar codigo java en Git/Github
+
+Para evitar guardar archivos innecesarios como los **.class**, es recomendable crear el archivo **.gitignore** y añadir las líneas de código que ignoran dichos archivos.
+* En el buscardor de internet buscar:
+    ```
+    gitignore java
+    ```
+
 ## Crear y ejecutar una clase en java
 
 1. Define la clase **learn** y el método **main**.
