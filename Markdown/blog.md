@@ -3,11 +3,11 @@
 
 ## Subtitulo de mi blog
 
-Texto de un *párrafo*
+Texto en cursiva: *párrafo*
 
-Texto de un **párrafo**
+Texto en negrita: **párrafo**
 
-Texto de un ~~párrafo~~
+Texto tachado: ~~párrafo~~
 
 <!-- UL -->
 
