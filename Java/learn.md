@@ -29,23 +29,42 @@ Para evitar guardar archivos innecesarios como los **.class**, es recomendable c
 
 ## Crear y ejecutar una clase en java
 
-1. Define la clase **learn** y el método **main**.
+1. Define la clase **Learn** y el método **main**.
     ``` java
-    public class learn {
+    public class Learn {
         public static void main (String args[]){
             System.out.println("Hello World!");
         }
     }
     ```
 
-2. Guardar el archivo con el nombre de la clase **learn.java**.
+2. Guardar el archivo con el nombre de la clase **Learn.java**.
 3. Crea el archivo bytecode
     ```
-    javac learn.java
+    javac Learn.java
     ```
 4. Ejecuta el archivo bytecode
     ```
-    java learn
+    java Learn
     ```
+
+## Estandares de Java
+
+1. El estilo de escritura es el CamelCase.
+2. No se puede definir una variable anteriormente definida.
+
+## Tipos de variables
+
+1. Constantes:
+    ``` java
+    final int CONSTANT = 55;
+    ```
+
+## Clases en Java
+
+1. Los nombres de las clases empiezan con mayusculas.
+2. El **documento.java** que la contiene tendra el mismo nombre que la clase y debe estar escrita exactamente igual.
+3. Los atributos constantes utilizando **final** deben ser asignados con un valor inicial en su misma definicion o utilizando el o los constructores.
+
 
 
