@@ -8,3 +8,10 @@
 2. Adaptabilidad
 
 
+## Terminología clave
+
+1. IA general vs estrecha
+2. IA fuerte vs debil
+    1. Fuerte: IA con inteligencia
+    2. Debil: IA que aparenta inteligencia.
+
