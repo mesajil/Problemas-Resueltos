@@ -137,6 +137,14 @@ public class Learn {
 
         // Strings
 
+        // Equals
+
+        String nombre = "Luis";
+
+        System.out.println(nombre == "Luis");
+        System.out.println(nombre.equals("Luis"));
+        System.out.println(nombre.equalsIgnoreCase("luis"));
+
         
     }
 }
