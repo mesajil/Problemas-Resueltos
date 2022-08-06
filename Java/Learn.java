@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Learn {
     public static void main (String args[]){
@@ -48,7 +49,94 @@ public class Learn {
         }
 
         System.out.println("Resultado: " + resultado_);
+        
+        // Introducir datos por teclado con Scanner
 
+        Scanner sc = new Scanner(System.in);
 
+        System.out.print("Ingrese su nombre: ");
+        String nombre__ = sc.nextLine();
+
+        System.out.print("Ingrese su edad: ");
+        int edad__ = sc.nextInt();
+
+        System.out.println("Hola " + nombre__ + ", su edad es " + edad__);
+
+        // switch case
+
+        int operacion_ = 5;
+        double num1__ = 50;
+        double num2__ = 7;
+        double resultado__ = 0;
+
+        switch (operacion_) { // Se puede usar int, enum, String
+
+            case 1:
+                resultado__ = num1__ + num2__;
+                break;
+            case 2:
+                resultado__ = num1__ - num2__;
+                break;
+            case 3:
+                resultado__ = num1__ * num2__;
+                break;
+            case 4:
+                resultado__ = num1__ / num2__;
+                break;
+            default:
+                System.out.println("Debe ingresar tipo de operacion.");    
+        }
+
+        System.out.println("Resultado: " + resultado__);
+
+        // Ciclos y bucles
+
+        for (int i = 0; i < 3; i ++){
+            System.out.println("Hello World " + (i + 1) + "!");
+        }
+
+        int i_ = 0;
+        while (i_ < 5){
+            System.out.print((i_ + 1) + ", ");
+            i_ ++;
+        }
+        System.out.println();
+
+        int j = 1;
+        do {
+            System.out.print(j + ", ");
+            j += 2;
+        } while (j < 10);
+        System.out.println();
+
+        int j_ = 0;
+        while (true) {
+            System.out.print(j_ + ", ");
+            j_ += 2;
+            if (j_ > 8) break;
+        }
+        System.out.println();
+
+        // Imprimir: 1, 99, 2, 98, 3, 97, 4, 96, 5, 95,
+        int inicial1 = 1;
+        int inicial2 = 99;
+        for (int k = 0; k < 5; k ++) {
+            System.out.print((inicial1 + k) + ", " + (inicial2 - k) + ", ");
+        }
+        System.out.println();
+
+        // Imprimir: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+        int n1 = 0, n2 = 1, aux = 0;
+        for (int m = 0; m < 10; m ++) {
+            System.out.print(n1 + ", ");
+            aux = n1;
+            n1 = n2;
+            n2 = n2 + aux;
+        }
+        System.out.println();
+
+        // Strings
+
+        
     }
 }
