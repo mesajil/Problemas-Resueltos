@@ -139,11 +139,20 @@ public class Learn {
 
         // Equals
 
-        String nombre = "Luis";
+        String name = "Luis";
 
-        System.out.println(nombre == "Luis");
-        System.out.println(nombre.equals("Luis"));
-        System.out.println(nombre.equalsIgnoreCase("luis"));
+        System.out.println(name == "Luis");
+        System.out.println(name.equals("Luis"));
+        System.out.println(name.equalsIgnoreCase("luis"));
+
+        // Length
+
+        System.out.println(name.length());
+
+        // Substring
+
+        System.out.println(name.substring(1));
+        System.out.println(name.substring(1,3));
 
         
     }
