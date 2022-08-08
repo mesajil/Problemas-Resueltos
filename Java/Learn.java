@@ -154,6 +154,21 @@ public class Learn {
         System.out.println(name.substring(1));
         System.out.println(name.substring(1,3));
 
+        // Arrays
         
+        int numbers[] = new int[5]; // Se inicializan en 0
+        
+        int length = numbers.length;
+        
+        for (int i = 0; i < length; i ++) {
+            numbers[i] = (i + 1) * (i + 1);
+        }
+        
+        System.out.println("Array: " + numbers + " Length: " + length);
+        System.out.println("Data: ");
+        for (int i = 0; i < length; i ++) {
+            System.out.print(numbers[i] + ", ");
+        }
+        System.out.println();
     }
 }
