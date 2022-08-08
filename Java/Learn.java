@@ -170,5 +170,15 @@ public class Learn {
             System.out.print(numbers[i] + ", ");
         }
         System.out.println();
+
+        // For in
+        
+        int array[] = {1,2,3,4,5};
+        
+        System.out.print("Array's data with for in: ");
+        for (int e: array) {
+            System.out.print(e + ", ");
+        }
+        System.out.println();
     }
 }
