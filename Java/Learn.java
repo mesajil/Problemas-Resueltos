@@ -171,14 +171,71 @@ public class Learn {
         }
         System.out.println();
 
-        // For in
+        // For :
         
+        System.out.print("Print array with 'For :':");
         int array[] = {1,2,3,4,5};
         
-        System.out.print("Array's data with for in: ");
+        System.out.print("Data: ");
         for (int e: array) {
             System.out.print(e + ", ");
         }
         System.out.println();
+
+        // Matrix
+
+        System.out.print("Learning Matrix:");
+        int[][] matrix = new int[5][5];
+        
+        for (int i = 0; i < matrix.length; i ++) {
+            for (int j = 0; j < matrix[0].length; j ++) {
+                matrix[i][j] = i * j;
+            }
+        }
+        for (int i = 0; i < matrix.length; i ++) {
+            for (int j = 0; j < matrix[0].length; j ++) {
+                
+                System.out.print(matrix[i][j] + ", ");
+            }
+            System.out.println();
+        }
+
+        // Matrix and for :
+
+        System.out.print("Print matrix with 'for :':");
+
+        for (int[] row: matrix) {
+            for (int e: row) {
+                System.out.print(e + ", ");
+            }
+            System.out.println();
+        }
+
+        // Irregular matrix
+
+        int[][] A = new int[3][];
+        
+        for (int i = 0; i < A.length; i ++) {
+            A[i] = new int[i + 1];
+        }
+        
+        System.out.println("Printing irregular matrix with length");
+        
+        for (int i = 0; i < A.length; i ++) {
+            for (int j = 0; j < A[i].length; j ++) {
+                
+                System.out.print(A[i][j] + ", ");
+            }
+            System.out.println();
+        }
+        
+        System.out.println("Printing irregular matrix with 'for :'");
+        
+        for (int[] row: A) {
+            for (int e: row) {
+                System.out.print(e + ", ");
+            }
+            System.out.println();
+        }
     }
 }
