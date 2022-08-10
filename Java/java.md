@@ -43,6 +43,10 @@ Para evitar guardar archivos innecesarios como los **.class**, es recomendable c
     ```
     javac Learn.java
     ```
+    Para especificar una direccion para guardar las clases
+    ```
+    javac -d . Learn.java
+    ```
 4. Ejecuta el archivo bytecode
     ```
     java Learn
@@ -52,6 +56,7 @@ Para evitar guardar archivos innecesarios como los **.class**, es recomendable c
 
 1. El estilo de escritura es el CamelCase.
 2. No se puede definir una variable anteriormente definida.
+3. Todo archivo con su clase deberia estar empaquetado.
 
 ## Tipos de variables
 
@@ -65,6 +70,45 @@ Para evitar guardar archivos innecesarios como los **.class**, es recomendable c
 1. Los nombres de las clases empiezan con mayusculas.
 2. El **documento.java** que la contiene tendra el mismo nombre que la clase y debe estar escrita exactamente igual.
 3. Los atributos constantes utilizando **final** deben ser asignados con un valor inicial en su misma definicion o utilizando el o los constructores.
+
+## Import Java Package
+
+1. Establecer la clase como publica
+2. Establecer el paquete de la clase:
+
+    ``` java
+    package pack;
+    public class Car {
+        ...
+    }
+    ```
+    **No olvidar guardar la clase en la carpeta con el nombre del paquete**
+
+3. Importar la clase:
+
+    ``` java
+    import pack.Car;
+    ```
+
+
+## OPP
+
+### Ventajas
+
+1. Programación modular utilizando clases.
+2. Más comprensibles, modificables y depurables.
+3. Reutilizable utilizando herencia.
+4. Control de errores con excepciones. 
+5. Encapsulamiento.
+
+### Vocabulario de la OPP
+
+1. Clases y objetos
+0. Instancia de clase
+0. Modularización
+0. Encapsulamiento
+0. Herencia
+0. Polimorfismo
 
 
 

@@ -1,7 +1,8 @@
+package learn;
 import java.util.Scanner;
 
-public class Learn {
-    public static void main (String args[]){
+public class Basics {
+    public static void main (String[] args){
         System.out.println("Hello World!");
 
         // Tipos de datos
@@ -50,17 +51,17 @@ public class Learn {
 
         System.out.println("Resultado: " + resultado_);
         
-        // Introducir datos por teclado con Scanner
+        // Scanner: Read input
 
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Ingrese su nombre: ");
-        String nombre__ = sc.nextLine();
+        // String nombre__ = sc.nextLine();
 
         System.out.print("Ingrese su edad: ");
-        int edad__ = sc.nextInt();
+        // int edad__ = sc.nextInt();
 
-        System.out.println("Hola " + nombre__ + ", su edad es " + edad__);
+        // System.out.println("Hola " + nombre__ + ", su edad es " + edad__);
 
         // switch case
 
@@ -102,14 +103,14 @@ public class Learn {
         }
         System.out.println();
 
-        int j = 1;
+        int j_ = 1;
         do {
-            System.out.print(j + ", ");
-            j += 2;
-        } while (j < 10);
+            System.out.print(j_ + ", ");
+            j_ += 2;
+        } while (j_ < 10);
         System.out.println();
 
-        int j_ = 0;
+        j_ = 0;
         while (true) {
             System.out.print(j_ + ", ");
             j_ += 2;
@@ -120,14 +121,14 @@ public class Learn {
         // Imprimir: 1, 99, 2, 98, 3, 97, 4, 96, 5, 95,
         int inicial1 = 1;
         int inicial2 = 99;
-        for (int k = 0; k < 5; k ++) {
-            System.out.print((inicial1 + k) + ", " + (inicial2 - k) + ", ");
+        for (int i = 0; i < 5; i ++) {
+            System.out.print((inicial1 + i) + ", " + (inicial2 - i) + ", ");
         }
         System.out.println();
 
-        // Imprimir: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+        // Fibonacci: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
         int n1 = 0, n2 = 1, aux = 0;
-        for (int m = 0; m < 10; m ++) {
+        for (int i = 0; i < 10; i ++) {
             System.out.print(n1 + ", ");
             aux = n1;
             n1 = n2;
@@ -147,16 +148,16 @@ public class Learn {
 
         // Length
 
-        System.out.println(name.length());
+        System.out.println("String's length: " + name.length());
 
         // Substring
 
-        System.out.println(name.substring(1));
-        System.out.println(name.substring(1,3));
+        System.out.println("Subtring with one argument: " + name.substring(1));
+        System.out.println("Subtring with two arguments: " + name.substring(1, 3));
 
         // Arrays
         
-        int numbers[] = new int[5]; // Se inicializan en 0
+        int[] numbers = new int[5]; // Se inicializan en 0
         
         int length = numbers.length;
         
@@ -170,13 +171,10 @@ public class Learn {
             System.out.print(numbers[i] + ", ");
         }
         System.out.println();
-
-        // For :
         
-        System.out.print("Print array with 'For :':");
+        System.out.print("Printing the array with for each: ");
         int array[] = {1,2,3,4,5};
         
-        System.out.print("Data: ");
         for (int e: array) {
             System.out.print(e + ", ");
         }
@@ -184,7 +182,6 @@ public class Learn {
 
         // Matrix
 
-        System.out.print("Learning Matrix:");
         int[][] matrix = new int[5][5];
         
         for (int i = 0; i < matrix.length; i ++) {
@@ -192,6 +189,9 @@ public class Learn {
                 matrix[i][j] = i * j;
             }
         }
+        
+        System.out.print("Printing the matrix with for: ");
+
         for (int i = 0; i < matrix.length; i ++) {
             for (int j = 0; j < matrix[0].length; j ++) {
                 
@@ -202,7 +202,7 @@ public class Learn {
 
         // Matrix and for :
 
-        System.out.print("Print matrix with 'for :':");
+        System.out.print("Print matrix with for each:");
 
         for (int[] row: matrix) {
             for (int e: row) {
@@ -229,7 +229,7 @@ public class Learn {
             System.out.println();
         }
         
-        System.out.println("Printing irregular matrix with 'for :'");
+        System.out.println("Printing irregular matrix with for each");
         
         for (int[] row: A) {
             for (int e: row) {
