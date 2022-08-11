@@ -12,7 +12,11 @@ public class Car {
         color = color_;
     }
 
-    public void print() {
+    public void setColor(String color_) {
+        color = color_;
+    }
+
+    public void printColor() {
         System.out.println("Color: " + color);
     }
 }
