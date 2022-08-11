@@ -51,6 +51,10 @@ Para evitar guardar archivos innecesarios como los **.class**, es recomendable c
     ```
     java Learn
     ```
+    o bien si la clase esta empaquetada:
+    ```
+    java pack.Learn
+    ```
 
 ## Estandares de Java
 
