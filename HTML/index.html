@@ -3,7 +3,8 @@
 
 <head>
     <title>Document</title>
-    <style> /* Código en Css para las etiquetas table, th, td */
+    <style>
+        /* Código en Css para las etiquetas table, th, td */
         table,
         th,
         td {
@@ -14,84 +15,120 @@
 
 <body>
 
-    <h1 id="titulo"> Headings / Encabezados </h1> <!-- HTML h1 to h6 Tags -->
-    <p> Paragraph / Párrafo </p> <!-- HTML p Tag -->
-    <hr> <!-- Thematic break / Línea divisoria: HTML hr Tag -->
+    <h1 id="top"> Headings </h1>
+    
+    <hr>
 
     <h2>Inline Container</h2>
-    <p>This <span style="color:blue">part of a text</span> is color blue.</p>
-    <br> <!-- Line break: HTML br Tag -->
+    
+    <p>This <span style="color:red">part of a text</span> is different.</p>
+    
+    <hr>
 
     <h2>HiperLink</h2>
+
     <a href="https://github.com/mesajil">Visit my github!</a><br>
-    <a target="_blank" href="https://github.com/mesajil">Visit my github in a new tab!</a><br>
+    <a target="_blank" href="https://github.com/mesajil">My github in a new tab!</a><br>
+
+    <br><hr>
 
     <h2>Image</h2>
-    <img src="https://i.linio.com/p/d4f24c98b58ddea256bc4cfc316c7d69-product.webp"><br>
-    <img src="https://i.linio.com/p/40b217ea77be3cc220813663b9f105e6-product.webp" width="200"><br>
+
+    <img
+    src="https://i.linio.com/p/40b217ea77be3cc220813663b9f105e6-product.webp"
+    width="200">
+
+    <br><hr>
+
+    <h2>Video from Youtube</h2>
+
+    <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/AlANXMK-5O8"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+
+    <br><hr>
 
     <h2>The form element</h2>
-    <form action="/action_page.php" method="post">
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname" placeholder="Nombre"><br><br>
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname" placeholder="Apellido"><br><br>
-        <input type="submit" value="Enviar">
-    </form>
-    <br>
 
+    <form action="/action_page.php" method="post">
+        <label for="name">First name: </label>
+        <input type="text" id="name" name="iname" placeholder="FIRST NAME" value="Luis">
+        
+        <br><br>
+        <label for="forage">Age: </label>
+        <input type="number" id="forage" name="iage" placeholder="AGE">
+        
+        <br><br>
+        <label for="femail">EMAIL: </label>
+        <input type="email" id="femail" name="email" placeholder="EMAIL">
+        
+        <br><br>
+        <label for="readonly">READONLY: </label>
+        <input type="text" id="readonly" name="ireadonly" value="SOME TEXT" readonly>
+        
+        <br><br>
+        <label for="disabled">DISABLED: </label>
+        <input type="text" id="disabled" name="idisabled" value="SOME TEXT" disabled>
+        
+        <br><br>
+        <label for="required">REQUIRED AND AUTOFOCUS: </label>
+        <input type="text" id="required" name="irequired" placeholder="SOME TEXT" required autofocus>
+
+        <br><br>
+        <input type="submit" value="SUBMIT">
+        <button type="reset">RESET</button>
+        <button type="submit">SUBMIT</button>
+    </form>
+
+    <br><hr>
+    
     <h2>The textarea element</h2>
+    
     <form action="/action_page.php" method="post">
-        <p><label for="review">Review of the HTML course:</label></p>
-        <textarea id="review" name="review" rows="3" cols="25">
-            At this course you will learn how to make a website.
+        <p>
+            <label for="review">This is the textarea element:</label>
+        </p>
+        <textarea id="review" name="tareview" rows="3" cols="50">
+            With this blog you will learn how to take notes and make a website.
         </textarea>
-        <br>
-        <input type="submit" value="Enviar">
+        <br><br>
+        <input type="submit" value="SUBMIT">
     </form>
-    <br>
+    
+    <br><hr>
 
-    <h2>The button Element</h2>
-    <form action="/action_page.php" method="get">
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname" placeholder="Nombre" value="Juan"><br><br>
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname" placeholder="Apellido" value="Perez"><br><br>
-        <button type="reset">
-            Reset
-        </button>
-        <button type="submit">Enviar</button>
-    </form>
-    <br>
-
-    <h2>The ul and ol elements</h2>
+    <h2>Unordered list</h2>
+    
     <ul>
         <li>List item 1</li>
         <li>List item 2</li>
         <li>List item 3</li>
     </ul>
 
-    <ol>
-        <li value="50">List item 1</li>
+    <hr>
+
+    <h2>Ordered list</h2>
+
+    <ol style="list-style-type: lower-alpha;">
+        <li value="3">List item 1</li>
         <li>List item 2</li>
-        <li>List item 3</li>
         <li>
             <ol>
                 <li>List item 1</li>
                 <li>List item 2</li>
-                <li>List item 3</li>
-            </ol>
-        </li>
-        <li>
-            <ol>
-                <li style="list-style-type: lower-alpha;">List item 1</li>
-                <li style="list-style-type: lower-alpha;">List item 2</li>
-                <li style="list-style-type: lower-alpha;">List item 3</li>
             </ol>
         </li>
     </ol>
 
+    <hr>
+
     <h2>The table element</h2>
+    
     <table>
         <thead>
             <tr>
@@ -124,8 +161,16 @@
             <td></td>
         </tfoot>
     </table>
-    <h2>Referenciar una etiqueta</h2>
-    <a href="#titulo">Ir al titulo</a>
+
+    <br><hr>
+
+    <h2>Go to top</h2>
+    
+    <a href="#top">Go to top</a>
+
+    <br><hr>
+
+
 </body>
 
 </html>
