@@ -15,13 +15,20 @@
 
 <body>
 
-    <h1 id="top"> Headings </h1>
+    <h2 id="menu">Menu</h2>
+    
+    <a href="#blog">Go to blog</a>
+    <a href="#form">Go to form</a>
+
+    <br><hr>
+
+    <h1> Headings </h1>
     
     <hr>
 
     <h2>Inline Container</h2>
     
-    <p>This <span style="color:red">part of a text</span> is different.</p>
+    <p>This <span style="color:red">part of a text</span> is contained.</p>
     
     <hr>
 
@@ -29,6 +36,7 @@
 
     <a href="https://github.com/mesajil">Visit my github!</a><br>
     <a target="_blank" href="https://github.com/mesajil">My github in a new tab!</a><br>
+    <a href="mailto:lhmesajil@gmail.com">lhmesajil@gmail.com</a>
 
     <br><hr>
 
@@ -55,7 +63,7 @@
 
     <h2>The form element</h2>
 
-    <form action="/action_page.php" method="post">
+    <form action="/action_page.php" method="post" id="form">
         <label for="name">First name: </label>
         <input type="text" id="name" name="iname" placeholder="FIRST NAME" value="Luis">
         
@@ -84,6 +92,12 @@
         <button type="reset">RESET</button>
         <button type="submit">SUBMIT</button>
     </form>
+
+    <br><hr>
+
+    <h2>Go to menu</h2>
+    
+    <a href="#menu">Go to menu</a>
 
     <br><hr>
     
@@ -162,15 +176,35 @@
         </tfoot>
     </table>
 
-    <br><hr>
+    <hr>
 
-    <h2>Go to top</h2>
+    <h2>Go to menu</h2>
     
-    <a href="#top">Go to top</a>
+    <a href="#menu">Go to menu</a>
 
     <br><hr>
 
-
+    <div id="blog">
+        <header>
+            <h1>Blog and containers</h1>
+        </header>
+        
+        <hr>
+        <section>
+            <article class="post">
+                <h2>Crea tu pagina web HTML, CSS y JS</h2>
+            </article>
+            <hr>
+            <article class="post">
+                <h2>Consigue tu primer trabajo como programador</h2>
+            </article>
+        </section>
+        
+        <hr>
+        <footer>
+            <p>Copyright 2022</p>
+        </footer>
+    </div>
 </body>
 
 </html>
