@@ -1,0 +1,15 @@
+
+/* Table */
+
+table {
+    border: 2px solid red;
+}
+
+td {
+    border: 1px solid blue;
+    background-color: aquamarine;
+}
+th {
+    border: 1px solid green;
+    background-color: bisque;
+}
