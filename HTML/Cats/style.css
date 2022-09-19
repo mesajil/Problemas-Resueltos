@@ -1,0 +1,14 @@
+
+* {
+    text-align: center;
+    background-color: black;
+}
+a {
+    color: white;
+}
+html {
+    background-image: url("img/catface.svg");
+}
+h1, h2, h3, h4 {
+color: yellow;
+}
