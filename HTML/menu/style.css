@@ -1,6 +1,15 @@
-
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
 .menu-nav {
     background-color: rgb(43, 202, 202);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
 }
 .menu-ul {
     list-style: none;
@@ -19,5 +28,32 @@
 .menu-ul__li a:active {
     color: blue;
 }
+.menu-ul__li a::after {
+    content: " | ";
+}
 
 
+section article p {
+    padding: 40px;
+    text-align: justify;
+    text-transform: lowercase;
+    font-weight: bold;
+    text-indent: 40px;
+    line-height: 40px;
+    word-spacing: 20px;
+    letter-spacing: 2px;
+    text-shadow: 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+    display: block;
+    text-decoration: none;
+    background-color: rgb(101, 183, 183);
+    font-size: 20px;
+    text-align: center;
+    text-transform:capitalize;
+    padding: 20px;
+}
+footer a:hover {
+    color: white;
+}
